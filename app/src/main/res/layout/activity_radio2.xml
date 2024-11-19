@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioActivity">
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/springboot"
+            android:layout_width="wrap_content"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:text="Spring Boot" />
+
+        <RadioButton
+            android:id="@+id/django"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Django" />
+
+        <RadioButton
+            android:id="@+id/radioNodejs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Node js" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/swappy_20241118_101924" />
+
+    <TextView
+        android:id="@+id/currentTool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:text="The current tools textview "/>
+
+</LinearLayout>

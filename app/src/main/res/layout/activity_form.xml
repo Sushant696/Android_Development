@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formActivity">
+
+    <EditText
+        android:id="@+id/plaintext"
+        android:layout_width="208dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="100dp"
+        android:padding="12dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:background="@drawable/sample_shape"
+        android:hint="Enter email"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="108dp"
+        android:text="Submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="196dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newinputlayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="400dp"
+        app:endIconMode ="password_toggle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinputlayout"
+            android:layout_width="match_parent"
+            app:endIconMode ="password_toggle"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
