@@ -9,17 +9,6 @@
     tools:context=".homeworkForm">
 
     <TextView
-        android:id="@+id/back"
-        android:layout_width="48dp"
-        android:layout_height="59dp"
-        android:text="←"
-        android:textColor="#666666"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/headerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -138,5 +127,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/passwordLayout" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/arrowleft_bold_32px"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="2dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

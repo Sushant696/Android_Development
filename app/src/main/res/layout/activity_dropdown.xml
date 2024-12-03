@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dropdown">
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12sp"
+        android:text="Country" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2sp"
+        android:text="selected Country:" />
+
+    <TextView
+        android:id="@+id/mytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="city" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autocom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="autocom" />
+
+</LinearLayout>
