@@ -19,7 +19,7 @@ class Destination : AppCompatActivity() {
         val password : String = intent.getStringExtra("password").toString()
 
         binding.opass.text=password ;
-        binding.ouser.text = username
+        binding.ouser.text = username;
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
